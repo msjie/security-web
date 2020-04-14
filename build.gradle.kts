@@ -12,6 +12,12 @@ version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
+	maven {
+		url = uri("https://maven.aliyun.com/repository/public/")
+	}
+	maven {
+		url = uri("https://maven.aliyun.com/repository/spring/")
+	}
 	mavenCentral()
 }
 
