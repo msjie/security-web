@@ -7,5 +7,10 @@ import org.springframework.boot.runApplication
 class SecurityWebApplication
 
 fun main(args: Array<String>) {
-	runApplication<SecurityWebApplication>(*args)
+
+	println("args: ${args.forEach { println(it) }}")
+	runApplication<SecurityWebApplication>(*args) {
+		println("start application")
+		this.addListeners()
+	}
 }
